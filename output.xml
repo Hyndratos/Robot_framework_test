@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2024-12-16T19:05:07.455439" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="c:\Users\micoh\Documents\projects\Todo\robot.robot">
+<test id="s1-t1" name="Login with correct Username and Password" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:08.777877" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:5500/Login.html'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-16T19:05:08.772878" elapsed="3.842414"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:12.678319" level="INFO">Typing text 'Mico' into text field 'id=username_field'.</msg>
+<arg>id=username_field</arg>
+<arg>Mico</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:12.675318" elapsed="0.170978"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:12.853293" level="INFO">Typing password into text field 'id=password_field'.</msg>
+<msg time="2024-12-16T19:05:12.901299" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password_field</arg>
+<arg>1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:12.852294" elapsed="0.107025"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:12.968316" level="INFO">Clicking button 'id=login_button'.</msg>
+<arg>id=login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:12.966317" elapsed="0.161050"/>
+</kw>
+<status status="PASS" start="2024-12-16T19:05:08.759883" elapsed="4.369483"/>
+</test>
+<test id="s1-t2" name="Make first todo" line="13">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.139363" level="INFO">Clicking button 'id=addButton'.</msg>
+<arg>id=addButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.137364" elapsed="0.111963"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.257324" level="INFO">Typing text 'Make a sandwich' into text field 'id=todo-item-0'.</msg>
+<arg>id=todo-item-0</arg>
+<arg>Make a sandwich</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.255325" elapsed="0.121982"/>
+</kw>
+<status status="PASS" start="2024-12-16T19:05:13.135365" elapsed="0.246941"/>
+</test>
+<test id="s1-t3" name="Make second todo" line="16">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.391302" level="INFO">Clicking button 'id=addButton'.</msg>
+<arg>id=addButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.389302" elapsed="0.116007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.509308" level="INFO">Typing text 'Make a sandwich' into text field 'id=todo-item-1'.</msg>
+<arg>id=todo-item-1</arg>
+<arg>Make a sandwich</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.507308" elapsed="0.146020"/>
+</kw>
+<status status="PASS" start="2024-12-16T19:05:13.386304" elapsed="0.269023"/>
+</test>
+<test id="s1-t4" name="Make thirt todo" line="19">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.719813" level="INFO">Clicking button 'id=addButton'.</msg>
+<arg>id=addButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.718813" elapsed="0.164946"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-16T19:05:13.887757" level="INFO">Typing text 'Make a sandwich' into text field 'id=todo-item-2'.</msg>
+<arg>id=todo-item-2</arg>
+<arg>Make a sandwich</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-16T19:05:13.885758" elapsed="0.109944"/>
+</kw>
+<status status="PASS" start="2024-12-16T19:05:13.714815" elapsed="0.285886"/>
+</test>
+<status status="PASS" start="2024-12-16T19:05:07.478431" elapsed="6.526268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

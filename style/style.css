@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(122, 122, 122);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifc;
+}
+.input_box{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(59, 59, 59);
+    border: 2px solid white;
+    border-radius: 14px;
+    padding: 50px;
+    margin: 20px;
+    position: fixed;
+    left: 40%;
+    top: 25%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+h2.Username{
+    position: fixed;
+    top: 43%;
+    color: white;
+}
+h2.Password{
+    position: fixed;
+    top: 53%;
+    color: white;
+}
+input.username_field{
+    position: fixed;
+    top: 50%;
+    height: 30px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+input.password_field{
+    position: fixed;
+    top: 60%;
+    height: 30px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+h1.login_text{
+    color: white;
+    position: fixed;
+    top: 30%;
+    font-size: 60px;
+}
+button.login_button{
+    size: 30px;
+    background-color: aqua;
+    position: fixed;
+    top: 70%;
+    height: 40px;
+    width: 250px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifc;
+}
